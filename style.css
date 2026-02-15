@@ -224,7 +224,7 @@ button:hover, .filtres button:hover, #concept a:hover, .bouton:hover {
 #menu-list {
 
     width: 100%;
-    height: 80vh;
+    height: 100%;
     display: flex;
     justify-content: center;
 }
@@ -236,7 +236,6 @@ button:hover, .filtres button:hover, #concept a:hover, .bouton:hover {
     flex-direction: column;
     height: 100%;
     width: 100%;
-    justify-content: center;
     align-items: flex-start;
         background: white;
     padding: 30px;
@@ -284,8 +283,7 @@ html, body {
 }
 
 .colonne li {
-    display: flex;
-    justify-content: space-between;
+    display: block;
     padding: 12px 0;
     border-bottom: 1px dotted #d4c9bc;
     color: #ec4b58;
@@ -295,12 +293,31 @@ html, body {
     border-bottom: none;
 }
 
-/* Responsive : 1 colonne sur mobile */
-@media (max-width: 600px) {
-    #menu-list .boite {
-        grid-template-columns: 1fr;
-        gap: 25px;
-    }
+
+.item-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 4px;
+}
+
+.item-nom {
+    font-weight: 600;
+    color: #c21725;
+    font-size: 1.1rem;
+}
+
+.item-prix {
+    font-weight: 600;
+    color: #c21725;
+    font-size: 1.1rem;
+}
+
+.item-description {
+    font-size: 0.9rem;
+    color: #ec4b58;
+    line-height: 1.4;
+    font-style: italic;
 }
 
 .horaires, .adresse 
@@ -382,4 +399,196 @@ footer{
         display: flex;
         flex-direction: column;
         align-items: center;
+}
+
+/* ===== RESPONSIVE ===== */
+
+/* Petits écrans : tablettes (max 1024px) */
+@media (max-width: 1024px) {
+    .grand-texte h2 {
+        font-size: 5rem;
+    }
+}
+
+/* Mobiles et grandes tablettes (max 768px) */
+@media (max-width: 768px) {
+
+
+    /* HEADER */
+    header .boite {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .navigation {
+        justify-content: center;
+        gap: 1.5rem;
+        flex-wrap: wrap;
+        padding: 1rem 0;
+    }
+    .navigation li a {
+        font-size: 1.1rem;
+    }
+
+    /* HERO */
+    #hero .contenu {
+        flex-direction: column;
+        height: auto; /* Laisse la hauteur s'adapter */
+    }
+    .image-principale {
+        width: 100%;
+    }
+    .image-principale img {
+        height: 50vh; /* Réduit la hauteur pour que ça tienne sur l'écran */
+        object-fit: cover;
+    }
+    .grand-texte {
+        width: 100%;
+        padding: 2rem 1rem;
+        text-align: center;
+    }
+    .grand-texte h2 {
+        font-size: 3.5rem;
+        margin-left: 0;
+        line-height: 1.2;
+    }
+    .social-buttons {
+        justify-content: center;
+        margin: 20px 0;
+    }
+    .grand-texte button {
+        margin-top: 1rem;
+    }
+
+    /* CONCEPT */
+    #concept {
+        height: auto;
+        min-height: 60vh;
+        padding: 3rem 1rem;
+        text-align: center; /* Centre le texte */
+    }
+    #concept .boite {
+        display: flex;
+        flex-direction: column;
+        align-items: center; /* Centre les éléments */
+        width: 100%;
+    }
+    #concept p {
+        max-width: 600px; /* Pour que les lignes ne soient pas trop longues */
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #concept a {
+        margin: 2rem auto 0; /* Centre le lien */
+    }
+
+    /* SÉLECTION (les cartes) */
+    #selection .contenu {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+        padding-top: 25px;
+    }
+
+    .contenu-menu
+    {
+        padding-top:25px;
+    }
+
+    .contenu-menu h2
+    {
+       width:100%;
+       text-align: center;
+       font-size: 2.5rem;
+    }
+    .carte {
+        width: 90%;
+        max-width: 400px;
+    }
+    .carte img {
+        height: 300px; 
+        object-fit: cover;
+    }
+    .carte h3, .carte p {
+        text-align: center;
+    }
+
+    /* MENU */
+    .filtres {
+        display: flex;
+        gap: 1rem;
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 2rem 0;
+    }
+    .filtres button {
+        padding: 0.8rem 1.5rem;
+        min-width: 140px;
+    }
+    #menu-list .boite {
+        grid-template-columns: 1fr; 
+        gap: 25px;
+        padding: 20px;
+    }
+    .colonne {
+        padding: 25px;
+        width: 100%;
+    }
+    .colonne h3 {
+        font-size: 1.3rem;
+        text-align: center;
+    }
+    /* Ajustement des items de menu pour mobile */
+    .item-row {
+        flex-wrap: wrap;
+    }
+    .item-prix {
+        margin-left: auto;
+    }
+    .item-description {
+        margin-top: 4px;
+        width: 100%;
+    }
+
+    /* FOOTER */
+    footer {
+        margin-top: 5vh;
+    }
+    footer .boite {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 1.5rem;
+    }
+    .damier {
+        height: 16px;
+        background-size: 16px 16px;
+    }
+}
+
+/* Très petits mobiles (max 480px) */
+@media (max-width: 480px) {
+    .grand-texte h2 {
+        font-size: 2.5rem;
+    }
+    .image-principale img {
+        height: 40vh;
+    }
+    #concept {
+        min-height: 50vh;
+        padding: 2rem 1rem;
+    }
+    .filtres {
+        flex-direction: column;
+        align-items: center;
+    }
+    .filtres button {
+        width: 100%;
+        max-width: 250px;
+    }
+    .colonne {
+        padding: 20px;
+    }
 }
