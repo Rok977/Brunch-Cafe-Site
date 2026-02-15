@@ -27,9 +27,9 @@
                     </div>
             <nav>
                 <ul class="navigation">
-                    <li><a href="#">Accueil</a></li>
-                    <li><a href="#">Menu</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#accueil">Accueil</a></li>
+                    <li><a href="#menu-intro">Menu</a></li>
+                    <li><a href=".footer">Contact</a></li>
                 </ul>
             </nav>
             <div class="damier"></div>
@@ -57,7 +57,7 @@
         <i class="fab fa-tripadvisor"></i>
     </a>
 </div>
-    <button> Order online </button>
+    <a href="404.html" class="bouton">Order online</a>
             </div>
 
         </div>
@@ -77,7 +77,7 @@
                 ici, chaque matin ressemble à un moment premium.
             </p>
 
-            <a href="#">ABOUT US</a>
+            <a href="404.html">ABOUT US</a>
 
         </div>
     </section>
@@ -120,10 +120,10 @@
         <div class="contenu-menu">
             <h2>Menu</h2>
 
-            <div class="filtres">
-                <button>Brunch</button>
-                <button>Boissons</button>
-            </div>
+ <div class="filtres">
+    <button id="btn-brunch">Brunch</button>
+    <button id="btn-boissons">Boissons</button>
+</div>
         </div>
     </section>
 
@@ -131,147 +131,262 @@
     <section id="menu-list">
         <div class="boite">
 
-<div class="colonne">
-    <h3>Nos Toast</h3>
-    <ul>
-        <li>
-            <div class="item-row">
-                <span class="item-nom">Avocado Toast</span>
-                <span class="item-prix">12€</span>
-            </div>
-            <div class="item-description">Pain toasté, avocat, œuf poché, graines</div>
-        </li>
-        <li>
-            <div class="item-row">
-                <span class="item-nom">Toast Saumon Deluxe</span>
-                <span class="item-prix">16€</span>
-            </div>
-            <div class="item-description">Saumon fumé, fromage frais, aneth, pain noir</div>
-        </li>
-        <li>
-            <div class="item-row">
-                <span class="item-nom">Toast Breakfast Bacon</span>
-                <span class="item-prix">14€</span>
-            </div>
-            <div class="item-description">Bacon croustillant, œuf brouillé, sirop d'érable</div>
-        </li>
-        <li>
-            <div class="item-row">
-                <span class="item-nom">Toast Frenchie</span>
-                <span class="item-prix">13€</span>
-            </div>
-            <div class="item-description">Brie, miel, noix, pain campagne</div>
-        </li>
-    </ul>
+<!-- Menu Brunch -->
+<div class="menu-groupe menu-brunch">
+    <div class="colonne">
+        <h3>Nos Toast</h3>
+        <ul>
+            <li>
+                <div class="item-row">
+                    <span class="item-nom">Avocado Toast</span>
+                    <span class="item-prix">12€</span>
+                </div>
+                <div class="item-description">Pain toasté, avocat, œuf poché, graines</div>
+            </li>
+            <li>
+                <div class="item-row">
+                    <span class="item-nom">Toast Saumon Deluxe</span>
+                    <span class="item-prix">16€</span>
+                </div>
+                <div class="item-description">Saumon fumé, fromage frais, aneth, pain noir</div>
+            </li>
+            <li>
+                <div class="item-row">
+                    <span class="item-nom">Toast Breakfast Bacon</span>
+                    <span class="item-prix">14€</span>
+                </div>
+                <div class="item-description">Bacon croustillant, œuf brouillé, sirop d'érable</div>
+            </li>
+            <li>
+                <div class="item-row">
+                    <span class="item-nom">Toast Frenchie</span>
+                    <span class="item-prix">13€</span>
+                </div>
+                <div class="item-description">Brie, miel, noix, pain campagne</div>
+            </li>
+        </ul>
+    </div>
+    <div class="colonne">
+        <h3>Nos Croc’ Monsieurs</h3>
+        <ul>
+            <li>
+                <div class="item-row">
+                    <span class="item-nom">Croc Monsieur</span>
+                    <span class="item-prix">9€</span>
+                </div>
+                <div class="item-description">Jambon, fromage, béchamel</div>
+            </li>
+            <li>
+                <div class="item-row">
+                    <span class="item-nom">Croc Madame</span>
+                    <span class="item-prix">11€</span>
+                </div>
+                <div class="item-description">Croc Monsieur + œuf au plat</div>
+            </li>
+            <li>
+                <div class="item-row">
+                    <span class="item-nom">Croc Garçon</span>
+                    <span class="item-prix">10€</span>
+                </div>
+                <div class="item-description">Double fromage, jambon blanc</div>
+            </li>
+            <li>
+                <div class="item-row">
+                    <span class="item-nom">Croc Fillette</span>
+                    <span class="item-prix">8€</span>
+                </div>
+                <div class="item-description">Petit appétit : demi-croc, salade</div>
+            </li>
+        </ul>
+    </div>
+    <div class="colonne">
+        <h3>Nos Omelette</h3>
+        <ul>
+            <li>
+                <div class="item-row">
+                    <span class="item-nom">Omelette Classique</span>
+                    <span class="item-prix">10€</span>
+                </div>
+                <div class="item-description">Omelette, fines herbes, salade</div>
+            </li>
+            <li>
+                <div class="item-row">
+                    <span class="item-nom">Omelette Veggie Boost</span>
+                    <span class="item-prix">12€</span>
+                </div>
+                <div class="item-description">Poivrons, courgettes, feta, épinards</div>
+            </li>
+            <li>
+                <div class="item-row">
+                    <span class="item-nom">Omelette Méditerranéenne</span>
+                    <span class="item-prix">13€</span>
+                </div>
+                <div class="item-description">Tomates, olives, chèvre, origan</div>
+            </li>
+            <li>
+                <div class="item-row">
+                    <span class="item-nom">Omelette Bacon</span>
+                    <span class="item-prix">14€</span>
+                </div>
+                <div class="item-description">Bacon grillé, oignons, cheddar</div>
+            </li>
+        </ul>
+    </div>
+    <div class="colonne">
+        <h3>Viennoiseries</h3>
+        <ul>
+            <li>
+                <div class="item-row">
+                    <span class="item-nom">Pain Chocolat</span>
+                    <span class="item-prix">2.5€</span>
+                </div>
+                <div class="item-description">Pâte feuilletée, chocolat</div>
+            </li>
+            <li>
+                <div class="item-row">
+                    <span class="item-nom">Croissant Pur Beurre</span>
+                    <span class="item-prix">2.2€</span>
+                </div>
+                <div class="item-description">Tradition français</div>
+            </li>
+            <li>
+                <div class="item-row">
+                    <span class="item-nom">Chausson aux Pommes</span>
+                    <span class="item-prix">3€</span>
+                </div>
+                <div class="item-description">Pommes caramélisées</div>
+            </li>
+            <li>
+                <div class="item-row">
+                    <span class="item-nom">Brioche Sucre Perlé</span>
+                    <span class="item-prix">3.5€</span>
+                </div>
+                <div class="item-description">Brioche moelleuse, perles de sucre</div>
+            </li>
+        </ul>
+    </div>
 </div>
 
-<div class="colonne">
-    <h3>Nos Croc’ Monsieurs</h3>
-    <ul>
-        <li>
-            <div class="item-row">
-                <span class="item-nom">Croc Monsieur</span>
-                <span class="item-prix">9€</span>
-            </div>
-            <div class="item-description">Jambon, fromage, béchamel</div>
-        </li>
-        <li>
-            <div class="item-row">
-                <span class="item-nom">Croc Madame</span>
-                <span class="item-prix">11€</span>
-            </div>
-            <div class="item-description">Croc Monsieur + œuf au plat</div>
-        </li>
-        <li>
-            <div class="item-row">
-                <span class="item-nom">Croc Garçon</span>
-                <span class="item-prix">10€</span>
-            </div>
-            <div class="item-description">Double fromage, jambon blanc</div>
-        </li>
-        <li>
-            <div class="item-row">
-                <span class="item-nom">Croc Fillette</span>
-                <span class="item-prix">8€</span>
-            </div>
-            <div class="item-description">Petit appétit : demi-croc, salade</div>
-        </li>
-    </ul>
-</div>
-
-<div class="colonne">
-    <h3>Nos Omelette</h3>
-    <ul>
-        <li>
-            <div class="item-row">
-                <span class="item-nom">Omelette Classique</span>
-                <span class="item-prix">10€</span>
-            </div>
-            <div class="item-description">Omelette, fines herbes, salade</div>
-        </li>
-        <li>
-            <div class="item-row">
-                <span class="item-nom">Omelette Veggie Boost</span>
-                <span class="item-prix">12€</span>
-            </div>
-            <div class="item-description">Poivrons, courgettes, feta, épinards</div>
-        </li>
-        <li>
-            <div class="item-row">
-                <span class="item-nom">Omelette Méditerranéenne</span>
-                <span class="item-prix">13€</span>
-            </div>
-            <div class="item-description">Tomates, olives, chèvre, origan</div>
-        </li>
-        <li>
-            <div class="item-row">
-                <span class="item-nom">Omelette Bacon</span>
-                <span class="item-prix">14€</span>
-            </div>
-            <div class="item-description">Bacon grillé, oignons, cheddar</div>
-        </li>
-    </ul>
-</div>
-
-<div class="colonne">
-    <h3>Viennoiseries</h3>
-    <ul>
-        <li>
-            <div class="item-row">
-                <span class="item-nom">Pain Chocolat</span>
-                <span class="item-prix">2.5€</span>
-            </div>
-            <div class="item-description">Pâte feuilletée, chocolat</div>
-        </li>
-        <li>
-            <div class="item-row">
-                <span class="item-nom">Croissant Pur Beurre</span>
-                <span class="item-prix">2.2€</span>
-            </div>
-            <div class="item-description">Tradition français</div>
-        </li>
-        <li>
-            <div class="item-row">
-                <span class="item-nom">Chausson aux Pommes</span>
-                <span class="item-prix">3€</span>
-            </div>
-            <div class="item-description">Pommes caramélisées</div>
-        </li>
-        <li>
-            <div class="item-row">
-                <span class="item-nom">Brioche Sucre Perlé</span>
-                <span class="item-prix">3.5€</span>
-            </div>
-            <div class="item-description">Brioche moelleuse, perles de sucre</div>
-        </li>
-    </ul>
+<!-- Menu Boissons -->
+<div class="menu-groupe menu-boissons" style="display: none;">
+    <div class="colonne">
+        <h3>Cafés</h3>
+        <ul>
+            <li>
+                <div class="item-row">
+                    <span class="item-nom">Expresso</span>
+                    <span class="item-prix">2,5€</span>
+                </div>
+                <div class="item-description">Corsé et intense</div>
+            </li>
+            <li>
+                <div class="item-row">
+                    <span class="item-nom">Café Crème</span>
+                    <span class="item-prix">3,5€</span>
+                </div>
+                <div class="item-description">Onctueux avec de la mousse</div>
+            </li>
+            <li>
+                <div class="item-row">
+                    <span class="item-nom">Cappuccino</span>
+                    <span class="item-prix">4€</span>
+                </div>
+                <div class="item-description">Café, lait, mousse de lait</div>
+            </li>
+            <li>
+                <div class="item-row">
+                    <span class="item-nom">Latte Macchiato</span>
+                    <span class="item-prix">4,5€</span>
+                </div>
+                <div class="item-description">Lait chaud et café</div>
+            </li>
+        </ul>
+    </div>
+    <div class="colonne">
+        <h3>Thés & Infusions</h3>
+        <ul>
+            <li>
+                <div class="item-row">
+                    <span class="item-nom">Thé Earl Grey</span>
+                    <span class="item-prix">3€</span>
+                </div>
+                <div class="item-description">Thé noir bergamote</div>
+            </li>
+            <li>
+                <div class="item-row">
+                    <span class="item-nom">Thé Vert Menthe</span>
+                    <span class="item-prix">3€</span>
+                </div>
+                <div class="item-description">Rafraîchissant</div>
+            </li>
+            <li>
+                <div class="item-row">
+                    <span class="item-nom">Infusion Verveine</span>
+                    <span class="item-prix">3€</span>
+                </div>
+                <div class="item-description">Doux et relaxant</div>
+            </li>
+        </ul>
+    </div>
+    <div class="colonne">
+        <h3>Jus & Smoothies</h3>
+        <ul>
+            <li>
+                <div class="item-row">
+                    <span class="item-nom">Jus d'orange</span>
+                    <span class="item-prix">3,5€</span>
+                </div>
+                <div class="item-description">Pressé maison</div>
+            </li>
+            <li>
+                <div class="item-row">
+                    <span class="item-nom">Smoothie Bowl</span>
+                    <span class="item-prix">6€</span>
+                </div>
+                <div class="item-description">Fruits rouges, banane, granola</div>
+            </li>
+            <li>
+                <div class="item-row">
+                    <span class="item-nom">Jus de pomme</span>
+                    <span class="item-prix">3€</span>
+                </div>
+                <div class="item-description">Frais et léger</div>
+            </li>
+        </ul>
+    </div>
+    <div class="colonne">
+        <h3>Boissons fraîches</h3>
+        <ul>
+            <li>
+                <div class="item-row">
+                    <span class="item-nom">Limonade</span>
+                    <span class="item-prix">3,5€</span>
+                </div>
+                <div class="item-description">Maison, menthe fraîche</div>
+            </li>
+            <li>
+                <div class="item-row">
+                    <span class="item-nom">Ice Tea Pêche</span>
+                    <span class="item-prix">3€</span>
+                </div>
+                <div class="item-description">Infusion glacée</div>
+            </li>
+            <li>
+                <div class="item-row">
+                    <span class="item-nom">Eau minérale</span>
+                    <span class="item-prix">2€</span>
+                </div>
+                <div class="item-description">Plate ou gazeuse</div>
+            </li>
+        </ul>
+    </div>
 </div>
 
         </div>
     </section>
 
     <!-- FOOTER -->
-    <footer>
+    <footer id="contact">
         <div class="boite">
 
             <div class="horaires">
@@ -289,6 +404,6 @@
         <div class="damier"></div>
         
     </footer>
-
+  <script src="script.js" defer></script>
 </body>
 </html>
