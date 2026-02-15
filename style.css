@@ -320,11 +320,15 @@ html, body {
     font-style: italic;
 }
 
-.horaires, .adresse 
+.horaires, .adresse , .contact 
 {
-    padding:1rem;
+    padding-top:1rem;
 }
 
+.adresse
+{
+    padding-bottom:1rem;
+}
 footer .boite {
 
    
@@ -560,7 +564,6 @@ footer{
         flex-direction: column;
         align-items: center;
         text-align: center;
-        gap: 1.5rem;
     }
     .damier {
         height: 16px;
